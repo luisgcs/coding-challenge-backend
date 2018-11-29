@@ -15,9 +15,7 @@
     "@types/restify": "^7.2.6",
     "@types/restify-cors-middleware": "^1.0.1",
     "mongoose": "^5.3.14",
-    "restify-cors-middleware": "^1.1.1"
-  },
-  "devDependencies": {
+    "restify-cors-middleware": "^1.1.1",
     "restify": "^7.2.3"
   }
 }
