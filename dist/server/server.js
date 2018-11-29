@@ -37,6 +37,7 @@ class Server {
                 const cors = restify_cors_middleware_1.default(corsOptions);
                 this.app.pre(cors.preflight);
                 this.app.use(cors.actual);
+                // this.app.use(rest.plugins.)
                 this.app.use(rest.plugins.queryParser());
                 this.app.use(rest.plugins.bodyParser());
                 for (let router of routers) {

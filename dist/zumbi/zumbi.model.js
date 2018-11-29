@@ -5,6 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 const zumbiSchema = new mongoose_1.default.Schema({
+    attributes: {
+        type: String,
+        required: true
+    },
     weapon: {
         type: String,
         required: true

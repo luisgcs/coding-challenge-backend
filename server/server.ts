@@ -28,6 +28,7 @@ export class Server {
 
 				this.app.pre(cors.preflight);
 				this.app.use(cors.actual);
+				// this.app.use(rest.plugins.)
 				this.app.use(rest.plugins.queryParser());
 				this.app.use(rest.plugins.bodyParser());
 
