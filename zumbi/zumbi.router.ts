@@ -22,16 +22,27 @@ class ZumbiRouter extends Router {
             }).catch(next)
         })
 		
-		app.get('/zombie/:armor', (req, resp, next) => {
-			Zumbi.findById(req.params.id).then(zombie => {
-				if(zombie) {
-					resp.json(zombie)
-					return next()
-				}
-				resp.send(404)
-				return next()
-			}).catch(next)
-		})
+		// app.get('/zombie/:armor', (req, resp, next) => {
+		// 	Zumbi.findById(req.params.armor).then(zombie => {
+		// 		if(zombie) {
+		// 			resp.json(zombie)
+		// 			return next()
+		// 		}
+		// 		resp.send(404)
+		// 		return next()
+		// 	}).catch(next)
+		// })
+
+        // app.get('/zombie/:weapon', (req, resp, next) => {
+		// 	Zumbi.findById(req.params.weapon).then(zombie => {
+		// 		if(zombie) {
+		// 			resp.json(zombie)
+		// 			return next()
+		// 		}
+		// 		resp.send(404)
+		// 		return next()
+		// 	}).catch(next)
+		// })
 
         app.post('/zombie', (req, resp, next) => {
             let zombie = new Zumbi(req.body)
