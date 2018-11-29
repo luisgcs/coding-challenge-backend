@@ -1,0 +1,22 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mongodb": "^3.1.15",
+    "@types/mongoose": "^5.3.1",
+    "@types/restify": "^7.2.6",
+    "@types/restify-cors-middleware": "^1.0.1",
+    "mongoose": "^5.3.14",
+    "restify-cors-middleware": "^1.1.1"
+  },
+  "devDependencies": {
+    "restify": "^7.2.3"
+  }
+}
